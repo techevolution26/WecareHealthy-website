@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare - Find Your Perfect Doctor</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Smooth scroll polyfill -->
+    <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+</head>
+
+<body>
+     <header class="navbar">
+        <div class="logo-container">
+            <img src="/images/stethoscope-icon-2316460_1920.png" alt="MediCare Logo" class="logo-img"
+            alt="MediCare Logo"
+            class="logo-img"
+            loading="lazy"
+            width="160" height="40">
+            <span class="logo-text">MediCare</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" data-aos="fade-down" data-aos-delay="100">
+            <h1>Find Your Perfect Doctor</h1>
+            <p>Book appointments with the best doctors near you</p>
+            <div class="search-container">
+                <input type="text" placeholder="Search doctors, specialties...">
+                <button>Search</button>
+            </div>
+        </section>
+
+        <section class="specialties">
+            <h2 data-aos="zoom-in">Our Specialties</h2>
+            <div class="specialty-grid">
+                <div class="specialty-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Cardiology</h3>
+                    <p>12 Doctors</p>
+                </div>
+                <div class="specialty-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Neurology</h3>
+                    <p>8 Doctors</p>
+                </div>
+                <div class="specialty-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Dental</h3>
+                    <p>15 Doctors</p>
+                </div>
+                <div class="specialty-card" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Ophthalmology</h3>
+                    <p>10 Doctors</p>
+                </div>
+                <div class="specialty-card" data-aos="fade-up" data-aos-delay="500">
+                    <h3>Pediatrics</h3>
+                    <p>14 Doctors</p>
+                </div>
+                <div class="specialty-card" data-aos="fade-up" data-aos-delay="600">
+                    <h3>Orthopedics</h3>
+                    <p>9 Doctors</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-doctors">
+            <h2 data-aos="fade-up">Featured Doctors</h2>
+            <div class="doctors-container" id="doctorsContainer" data-aos="zoom-in" data-aos-delay="100">
+                <!-- Doctors will be loaded here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Search Doctor</h3>
+                    <p>Find the perfect doctor.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Book Appointment</h3>
+                    <p>Select a time slot.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Get Treatment</h3>
+                    <p>Visit the doctor.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>What Our Patients Say</h2>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Amazing experience with Dr. Johnson."</p>
+                        <div class="patient-info">
+                            <div class="patient-name">Sarah Thompson</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The booking process was smooth."</p>
+                        <div class="patient-info">
+                            <div class="patient-name">Emily Davis</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Great platform for finding the right doctor."</p>
+                        <div class="patient-info">
+                            <div class="patient-name">Mike Johnson</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>HealthPlus</h3>
+                <p>456 Wellness Avenue</p>
+                <p>Medical District, MD 54321</p>
+                <p>+1 (555) 987-6543</p>
+                <p>info@healthplus.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Find a Doctor</a></li>
+                    <li><a href="#">Book Appointment</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 HealthPlus. All rights reserved.</p>
+        </div>
+    </footer>
+    </main>
+
+    <script src="js/home.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out-quad',
+            once: true,
+            mirror: false
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
